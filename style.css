@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+max-width: 65%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.logo {
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  margin-right: 15px;
+  text-transform: uppercase;
+}
+
+li a {
+  color: black;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: blue;
+}
+
+.hero { 
+  height: 400px;
+  background-color: beige;
+}
+
+@media only screen and (min-width: 800px) {
+  .hero {
+    height: 800px;
+  }
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+}
+
+.farm {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  height: 400px;
+  width: 100%;
+  border: 1px solid red;
+  display: flex;
+ align-items: center;
+ gap: 5px;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+}
+
+.box {
+ height: 100px;
+ width: 40%;
+ padding: 50px;
+ border: 1px solid #000;
+ background-color: gray;
+}
+
+.alpacas {
+  display: flex;
+  justify-content: center;
+}
+
+.parent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border: 1px solid#000;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+
+.container2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.guided {
+  display: flex;
+  justify-content: center;
+}
+
+.section {
+display: flex;
+justify-content: space-between;
+gap: 1rem;
+}
+.Accomodation {
+  display: flex;
+  justify-content: center;
+}
+
+.prectangle {
+  display: flex;
+  justify-content: space-between;
+}
+.rectangle {
+  width: 300px;
+  height: 150px;
+  border: 1px solid #000;
+  background-color: gray;
+  margin: 0 auto;
+}
+
+.contact {
+  margin-left: 50%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin: 0 auto;
+  background-color: gray;
+  padding: 4px;
+  
+}
+
+
+
