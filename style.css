@@ -4,16 +4,32 @@
   box-sizing: border-box;
 }
 
-.body {
-max-width: 65%;
+/* Default styles */
+/* We declare some default styles
+ in order not to repeat them for each 
+ element in case we want the same styling */
+header {
+  margin-bottom: 40px;
 }
+
+section {
+  margin-bottom: 40px;
+  padding: 0 5px;
+}
+
+h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Default styles end */
 
 nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  border: 1px solid black;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .logo {
@@ -23,10 +39,15 @@ nav {
 ul {
   list-style-type: none;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 300px;
+  margin: 0 auto 10px;
 }
 
 li {
-  margin-right: 15px;
+  margin-right: 10px;
   text-transform: uppercase;
 }
 
@@ -39,110 +60,174 @@ li a:hover {
   color: blue;
 }
 
-.hero { 
+.hero {
   height: 400px;
-  background-color: beige;
+  background-color: grey;
 }
+
+/* ------ */
+
+/* about */
+.about {
+  text-align: center;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+}
+
+/* farm */
+.farm h3 {
+  text-align: center;
+}
+
+.farm .container {
+  /* We use 1fr column in order to be full screen width for the mobile view. Later on we will increase columns for desktop view */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 15px;
+}
+
+.farm .container .box {
+  width: 100%;
+  background-color: gray;
+  height: 300px;
+}
+
+/* alpacas */
+.alpacas .container {
+  /* we add flex container because later in desktop 
+  view we need alpacas to be in one row. So for mobile
+  view we use flex-direction: column */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.alpacas .container .alpaca {
+/*   this will center ALL texts in the container
+ */  text-align: center;
+}
+
+.alpacas .container .alpaca .circle {
+  /* styling for each circle */
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: gray;
+  margin-bottom: 10px;
+}
+
+.alpacas .container .alpaca .name {
+  font-size: 18px;
+}
+
+/* guided tours section */
+
+.guided-tours .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
+}
+
+.guided-tours .container .card {
+  background-color: rgb(194, 238, 205);
+  padding: 15px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.guided-tours .container .card .content {
+  background-color: rgb(238, 234, 194);
+  padding: 20px;
+}
+
+.guided-tours .container .card button {
+  outline: none;
+  background-color: rgb(66, 151, 241);
+  border: none;
+  padding: 10px 20px;
+}
+.accomodation .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  
+  
+}
+
+.accomodation .container .rectangle {
+  width: 100%;
+  padding: 10px;
+
+}
+
+.accomodation .container .rectangle .image {
+  height: 200px;
+  width: 100%;
+  background-color: gray;
+  
+}
+
+.accomodation .container .rectangle .content {
+  padding: 15px;
+}
+.accomodation h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: gray;
+  padding: 20px;
+}
+
+.contact .form label {
+  margin-bottom: 5px;
+}
+
+.contact .form textarea,
+.contact .form input {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 2px;
+  border: none;
+}
+
+.contact .form input {
+  height: 30px;
+}
+
+.contact .form textarea {
+  height: 100px;
+}
+
+.contact .form button {
+  border: none;
+  padding: 10px;
+  min-width: 210px;
+}
+
+
+
+
 
 @media only screen and (min-width: 800px) {
   .hero {
     height: 800px;
   }
 }
-
-.about {
-  display: flex;
-  justify-content: center;
-}
-
-.farm {
-  display: flex;
-  justify-content: center;
-}
-
-.container {
-  height: 400px;
-  width: 100%;
-  border: 1px solid red;
-  display: flex;
- align-items: center;
- gap: 5px;
- flex-wrap: wrap;
- justify-content: space-evenly;
-}
-
-.box {
- height: 100px;
- width: 40%;
- padding: 50px;
- border: 1px solid #000;
- background-color: gray;
-}
-
-.alpacas {
-  display: flex;
-  justify-content: center;
-}
-
-.parent {
-  display: flex;
-  justify-content: space-between;
-}
-
-.circle {
-  width: 100px;
-  height: 100px;
-  border: 1px solid#000;
-  border-radius: 50%;
-  background-color: gray;
-}
-
-
-.container2 {
-  display: flex;
-  justify-content: space-between;
-}
-
-.guided {
-  display: flex;
-  justify-content: center;
-}
-
-.section {
-display: flex;
-justify-content: space-between;
-gap: 1rem;
-}
-.Accomodation {
-  display: flex;
-  justify-content: center;
-}
-
-.prectangle {
-  display: flex;
-  justify-content: space-between;
-}
-.rectangle {
-  width: 300px;
-  height: 150px;
-  border: 1px solid #000;
-  background-color: gray;
-  margin: 0 auto;
-}
-
-.contact {
-  margin-left: 50%;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  max-width: 50%;
-  margin: 0 auto;
-  background-color: gray;
-  padding: 4px;
-  
-}
-
-
-
