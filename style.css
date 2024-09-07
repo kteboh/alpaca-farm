@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Default styles */
@@ -17,10 +18,6 @@ section {
   padding: 0 5px;
 }
 
-h3 {
-  margin-bottom: 20px;
-  text-align: center;
-}
 
 /* Default styles end */
 
@@ -36,7 +33,7 @@ nav {
   text-transform: uppercase;
 }
 
-ul {
+ .unorder {
   list-style-type: none;
   display: flex;
   justify-content: center;
@@ -46,7 +43,7 @@ ul {
   margin: 0 auto 10px;
 }
 
-li {
+ .unorder li {
   margin-right: 10px;
   text-transform: uppercase;
 }
@@ -65,6 +62,26 @@ li a:hover {
   background-color: grey;
 }
 
+h2 {
+  text-transform: uppercase;
+  font-size: 38px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Playfair Display", sans-serif;
+}
+
+h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
 /* ------ */
 
 /* about */
@@ -78,7 +95,7 @@ li a:hover {
 }
 
 /* farm */
-.farm h3 {
+.farm  {
   text-align: center;
 }
 
@@ -102,7 +119,7 @@ li a:hover {
   view we need alpacas to be in one row. So for mobile
   view we use flex-direction: column */
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 25px;
@@ -127,17 +144,22 @@ li a:hover {
 }
 
 /* guided tours section */
+.guided-tours{
+  background-color: gray;
+  padding: 60px 25px 80px;
+}
 
 .guided-tours .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px; 
+  gap: 30px; 
+  margin-top: 50px;
 }
 
 .guided-tours .container .card {
-  background-color: rgb(194, 238, 205);
+  background-color: white;
   padding: 15px;
   min-height: 400px;
   display: flex;
@@ -146,45 +168,101 @@ li a:hover {
 }
 
 .guided-tours .container .card .content {
-  background-color: rgb(238, 234, 194);
+  background-color: white;
   padding: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.guided-tours .container .card .content p {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  line-height: 32px;
 }
 
 .guided-tours .container .card button {
   outline: none;
-  background-color: rgb(66, 151, 241);
+  background-color: #E5AE8C;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 12px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  transition: .3s ease;
 }
+
+.guided-tours .container .card button:hover{
+  cursor: pointer;
+  color: #000;
+  transform: scale(1.005); 
+}
+
 .accomodation .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-  
-  
 }
 
-.accomodation .container .rectangle {
-  width: 100%;
-  padding: 10px;
-
+.accomodation .container .card {
+  background-color: white;
+  padding: 15px;
+  
+  display: flex;
+  flex-direction: column;
 }
 
-.accomodation .container .rectangle .image {
+.accomodation .container .card .image {
   height: 200px;
   width: 100%;
   background-color: gray;
   
 }
 
-.accomodation .container .rectangle .content {
+.accomodation .container .card .content {
   padding: 15px;
+  text-align: center;
+  justify-content: space-between;
 }
+
+.accomodation .container .card .content p {
+text-align: center;
+font-size: 18px;
+line-height: 30px;
+color: #818181;
+}
+
+.booking-p {
+  margin: 30px 28px;
+  text-align: center;
+  line-height: 30px;
+}
+
 .accomodation h4 {
   text-align: center;
   margin-bottom: 10px;
+}
+
+.accomodation-button {
+  display: block;
+  outline: none;
+  background-color: #E5AE8C;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  transition: .3s ease;
+  margin: 3rem auto;
+  align-self: center;
+  cursor: pointer;
+  width: 300px;
+}
+
+.accomodation-button:hover{
+  cursor: pointer;
+  color: #000;
+  transform: scale(1.005); 
 }
 
 .contact .form {
@@ -192,7 +270,7 @@ li a:hover {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: gray;
+  background-color: #818181;
   padding: 20px;
 }
 

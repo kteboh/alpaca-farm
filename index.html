@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,7 +18,7 @@
         <div class="image"></div>
         <span>logo</span>
       </div>
-      <ul>
+      <ul class="unorder">
         <li><a href="/">about</a></li>
         <li><a href="/">farm</a></li>
         <li><a href="/">alpacas</a></li>
@@ -29,7 +32,7 @@
   </header>
   <main>
     <section class="about">
-      <h3 id="iuyguyg">About</h3>
+      <h2>About</h2>
       <p>
         The Happy Alpaca Farm is a fictive farm everyone can enjoy.Book a tour
         with our friendly alpacas or explore the meadows and woods around the farm
@@ -38,7 +41,7 @@
     </section>
 
     <section class="farm">
-      <h3>The Farm</h3>
+      <h2>The Farm</h2>
       <div class="container">
         <div class="box" box>1</div>
         <div class="box" box>2</div>
@@ -48,7 +51,7 @@
     </section>
 
     <section class="alpacas">
-      <h3>The Alpacas</h3>
+      <h2>The Alpacas</h2>
       <div class="container">
         <div class="alpaca">
           <div class="circle"></div>
@@ -80,7 +83,7 @@
     <!-- main section -->
     <section class="guided-tours">
 
-      <h3>Tours</h3>
+      <h2>Guided Tours</h2>
 
       <!-- container to wrap all cards so that we can 
        position them in columns and add gaps for mobile 
@@ -96,11 +99,14 @@
           <div class="content">
             <h3>1 day tour</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem quod blanditiis nulla unde, et
-              praesentium fugiat reiciendis quae architecto autem veritatis minus dolore quas odit, impedit iure ipsam
-              esse
-              laudantium.
+              Book a tour with our friendly alpacas and explore the meadows and woods arround the farm.
             </p>
+            <ul>
+              <li>Guided Tour for 2 adults</li>
+              <li>Breakfast and Lunch included</li>
+              <li>One Picture with your favorite Alpaca</li>
+            </ul>
+            <p>Prices starting from 50 EUR</p>
           </div>
           <button>BOOK NOW</button>
         </article>
@@ -109,13 +115,19 @@
            content on top and button on the bottom when we 
            add space-between property to card container-->
           <div class="content">
-            <h3>1 day tour</h3>
+            <h3>2 day tour</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem quod blanditiis nulla unde, et
-              praesentium fugiat reiciendis quae architecto autem veritatis minus dolore quas odit, impedit iure ipsam
-              esse
-              laudantium.
+              Book a tour with our friendly alpacas and explore the meadows and woods arround the farm.
             </p>
+            <ul>
+              <li>Guided Tour for 2 adults</li>
+              <li>One night in our beautiful hotel</li>
+              <li>Breakfast and Lunch included</li>
+              <li>One Picture with your favorite Alpaca</li>
+            </ul>
+            <p>After the tour you enjoy the rest of your stay in our cosy accomodation with fireplace and perfect view from the window.</p>
+
+            <span>Prices starting from 100 EUR</span>
           </div>
           <button>BOOK NOW</button>
         </article>
@@ -124,13 +136,19 @@
            content on top and button on the bottom when we 
            add space-between property to card container-->
           <div class="content">
-            <h3>1 day tour</h3>
+            <h3>3 day tour</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem quod blanditiis nulla unde, et
-              praesentium fugiat reiciendis quae architecto autem veritatis minus dolore quas odit, impedit iure ipsam
-              esse
-              laudantium.
+              Book a tour with our friendly alpacas and explore the meadows and woods arround the farm.
             </p>
+            <ul>
+              <li>Guided Tour for 2 adults</li>
+              <li>Two night in our beautiful hotel</li>
+              <li>Breakfast and Lunch included</li>
+              <li>One Picture with your favorite Alpaca</li>
+            </ul>
+            <p>After the tour you enjoy the rest of your stay in our cosy accomodation with fireplace and perfect view from the window</p>
+
+            <p>Prices starting from 150 EUR</p>
           </div>
           <button>BOOK NOW</button>
         </article>
@@ -138,46 +156,55 @@
     </section>
 
     <section class="accomodation">
-      <h3>Accomodation</h3>
+      <h2>Accomodation</h2>
       <div class="container">
-        <div class="rectangle">
+        <div class="card">
           <div class="image"></div>
           <div class="content">
-            <h4>Lorem, ipsum.</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cum, dolores laudantium explicabo quo
-              facere.</p>
+            <h4>RELAX</h4>
+            <p>There is nothing more relaxing then exploring the surroundings with an alpaca. You will quickly get used to your new friend and have unforgettable adventures.</p>
           </div>
         </div>
-        <div class="rectangle">
+        <div class="card">
           <div class="image"></div>
           <div class="content">
-            <h4>Lorem, ipsum.</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cum, dolores laudantium explicabo quo
-              facere.</p>
+            <h4>THE CABIN</h4>
+            <p>Spend your night in our stunning lakeside cabin. Light a fire in the firespace and enjoy a good book and a glass of wine from our farm store. Pure relaxation.</p>
           </div>
         </div>
-        <div class="rectangle">
+        <div class="card">
           <div class="image"></div>
           <div class="content">
-            <h4>Lorem, ipsum.</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cum, dolores laudantium explicabo quo
-              facere.</p>
+            <h4>ENJOY THE NATURE</h4>
+            <p>Wonderful forests and fields surround our farm. There is so much to discover. Unwind and enjoy fresh country air.</p>
           </div>
-        </div>
+
+             <p class="booking-p">Could we convince you of our wide range of products? Then what are you waiting for? Contact us via the contact form and ask for your individual offer. We will get back to you as soon as possible to make your stay unforgettable</p>
+
+              <div>
+                <button class="accomodation-button">BOOK NOW</button>
+              </div>
+            </div>
       </div>
     </section>
 
     <section class="contact">
-      <h3>Contact Us</h3>
+      <h2>Contact Us</h2>
       <form class="form">
-        <label for="your name">Your name</label>
-        <input type="text" name="your name" id="Your name">
+        <label for="first name">First Name</label>
+        <input type="text" name="first name" id="First Name" placeholder="...">
+
+        <label for="your name">Last Name</label>
+        <input type="text" name="your name" id="Last Name" placeholder="...">
+
         <label for="email">Email</label>
-        <input type="email" name="email" id="Email">
-        <label for="your message">Your message</label>
-        <textarea name="yuor message" id="Your message""></textarea>
-      <button>SEND</button>
-    </form>
+        <input type="email" name="email" id="Email" placeholder="...">
+
+        <label for="comment">Comment</label>
+        <textarea name="comment" id="Comment"></textarea>
+        
+        <button>SEND</button>
+     </form>
   </section>
   </main>
   <footer></footer>
