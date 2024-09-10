@@ -9,6 +9,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -25,10 +29,10 @@
         <li><a href="/">tours</a></li>
         <li><a href="/">stay</a></li>
         <li><a href="/">shop</a></li>
-        <li><a href="/">contact</a></li>
+        <li><a href="#contact">contact</a></li>
       </ul>
     </nav>
-    <div class="hero"></div>
+    <div class="hero"><img src="./image/jaddy-liu-KgYAIBzuKPo-unsplash.jpg" alt="farm pic" height="400px" width="100%"></div>
   </header>
   <main>
     <section class="about">
@@ -43,10 +47,10 @@
     <section class="farm">
       <h2>The Farm</h2>
       <div class="container">
-        <div class="box" box>1</div>
-        <div class="box" box>2</div>
-        <div class="box" box>3</div>
-        <div class="box" box>4</div>
+        <div class="box" box><img src="./image/patrick-schneider-wczrs3Unfnk-unsplash.jpg" alt="farm pic" height="300px" width="100%"></div>
+        <div class="box" box><img src="./image/roger-starnes-sr-MIeLJg5698E-unsplash.jpg" alt="farm pic" height="300px" width="100%"></div>
+        <div class="box" box><img src="./image/brooke-cagle-EenUxvVltMs-unsplash.jpg" alt="farm pic" height="300px" width="100%"></div>
+        <div class="box" box><img src="./image/annie-spratt-JMjNnQ2xFoY-unsplash.jpg" alt="cattles" height="300px" width="100%"></div>
       </div>
     </section>
 
@@ -54,27 +58,27 @@
       <h2>The Alpacas</h2>
       <div class="container">
         <div class="alpaca">
-          <div class="circle"></div>
+          <div class="circle"><img src="./image/andrea-tummons-HmPkvapPq70-unsplash.jpg" alt="chicken pic" height="200px" width="200px"></div>
           <span class="name">Balou</span>
         </div>
         <div class="alpaca">
-          <div class="circle"></div>
+          <div class="circle"><img src="./image/jenny-hill-qysVTP1OONk-unsplash.jpg" alt="cattle" height="200px" width="200px"></div>
           <span class="name">Gismo</span>
         </div>
         <div class="alpaca">
-          <div class="circle"></div>
+          <div class="circle"><img src="./image/vitalii-khodzinskyi-Ogei6t9fMDk-unsplash.jpg" alt="horse" height="200px" width="200px"></div>
           <span class="name">Hardi</span>
         </div>
         <div class="alpaca">
-          <div class="circle"></div>
+          <div class="circle"><img src="./image/sardar-faizan-uZIRwZ09o9U-unsplash.jpg" alt="goats" height="200px" width="200px"></div>
           <span class="name">Kalle</span>
         </div>
         <div class="alpaca">
-          <div class="circle"></div>
+          <div class="circle"><img src="./image/marwan-ahmed-KtYOVSSQ5-s-unsplash.jpg" alt="goat" height="200px" width="200px"></div>
           <span class="name">King</span>
         </div>
         <div class="alpaca">
-          <div class="circle"></div>
+          <div class="circle"><img src="./image/greg-lippert-Z5Yha3jIHnc-unsplash.jpg" alt="sheep" height="200px" width="200px"></div>
           <span class="name">Scotty</span>
         </div>
       </div>
@@ -129,6 +133,8 @@
 
             <span>Prices starting from 100 EUR</span>
           </div>
+            <div class="position">MOST BOOKED</div>
+
           <button>BOOK NOW</button>
         </article>
         <article class="card">
@@ -159,23 +165,23 @@
       <h2>Accomodation</h2>
       <div class="container">
         <div class="card">
-          <div class="image"></div>
+          <div class="image"><img src="./image/clem-onojeghuo-zlABb6Gke24-unsplash.jpg" alt="relax" height="200px" width="100%"></div>
           <div class="content">
-            <h4>RELAX</h4>
+            <h3>RELAX</h3>
             <p>There is nothing more relaxing then exploring the surroundings with an alpaca. You will quickly get used to your new friend and have unforgettable adventures.</p>
           </div>
         </div>
         <div class="card">
-          <div class="image"></div>
+          <div class="image"><img src="./image/adrian-dascal-gW5dQSFER9A-unsplash.jpg" alt="cabin" height="200px" width="100%"></div>
           <div class="content">
-            <h4>THE CABIN</h4>
+            <h3>THE CABIN</h3>
             <p>Spend your night in our stunning lakeside cabin. Light a fire in the firespace and enjoy a good book and a glass of wine from our farm store. Pure relaxation.</p>
           </div>
         </div>
         <div class="card">
-          <div class="image"></div>
+          <div class="image"><img src="./image/johannes-plenio-RwHv7LgeC7s-unsplash.jpg" alt="nature" height="200px" width="100%"></div>
           <div class="content">
-            <h4>ENJOY THE NATURE</h4>
+            <h3>ENJOY THE NATURE</h3>
             <p>Wonderful forests and fields surround our farm. There is so much to discover. Unwind and enjoy fresh country air.</p>
           </div>
 
@@ -188,22 +194,30 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <h2>Contact Us</h2>
       <form class="form">
-        <label for="first name">First Name</label>
+      <div>
+        <label for="first name">First Name:</label>
         <input type="text" name="first name" id="First Name" placeholder="...">
+      </div>
 
-        <label for="your name">Last Name</label>
+      <div>
+        <label for="your name">Last Name:</label>
         <input type="text" name="your name" id="Last Name" placeholder="...">
+      </div>
 
-        <label for="email">Email</label>
+      <div>
+        <label for="email">Email:</label>
         <input type="email" name="email" id="Email" placeholder="...">
+      </div>
 
-        <label for="comment">Comment</label>
+      <div>
+        <label for="comment">Comment:</label>
         <textarea name="comment" id="Comment"></textarea>
-        
-        <button>SEND</button>
+      </div>
+  
+        <button class="contact-button">SUBMIT</button>
      </form>
   </section>
   </main>

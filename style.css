@@ -64,22 +64,21 @@ li a:hover {
 
 h2 {
   text-transform: uppercase;
-  font-size: 38px;
     margin-bottom: 20px;
     text-align: center;
-    font-family: "Playfair Display", sans-serif;
+    font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  font-style: normal;
+    
 }
 
 h3 {
-  font-size: 30px;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 60px;
-}
-
-h4 {
-  font-size: 20px;
-  text-transform: uppercase;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* ------ */
@@ -139,6 +138,10 @@ h4 {
   margin-bottom: 10px;
 }
 
+.alpacas .container .alpaca .circle img {
+  border-radius: 50%;
+}
+
 .alpacas .container .alpaca .name {
   font-size: 18px;
 }
@@ -165,6 +168,16 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+}
+
+.guided-tours .container .card .position {
+  position: absolute;
+  margin: 50px 0px 50px -20px;
+  color: white;
+  background-color: black;
+  font-size: small;
+  font-weight: 600;
 }
 
 .guided-tours .container .card .content {
@@ -268,40 +281,60 @@ color: #818181;
 .contact .form {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #818181;
+  background-color: #9c9c9c10;;
+  padding: 30px;
+  max-width: 100%;
+  margin: 0 20px;
+  border-radius: 10px;
+}
+
+.form label {
+  display: block;
+  margin: 10px 0 0 5px;
+  
+}
+input {
   padding: 20px;
-}
-
-.contact .form label {
-  margin-bottom: 5px;
-}
-
-.contact .form textarea,
-.contact .form input {
   width: 100%;
-  margin-bottom: 15px;
-  border-radius: 2px;
   border: none;
+  border-radius: 5px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.25  )
 }
 
-.contact .form input {
-  height: 30px;
-}
-
-.contact .form textarea {
-  height: 100px;
-}
-
-.contact .form button {
+textarea {
+  padding: 30px;
+  height: 200px;
+  width: 100%;
   border: none;
-  padding: 10px;
-  min-width: 210px;
+  border-radius: 5px;
+}
+
+.contact-button {
+    display: block;
+    outline: none;
+    background-color: #E5AE8C;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    transition: .3s ease;
+    margin: 3rem auto;
+    align-self: center;
+    cursor: pointer;
+    width: 300px;
+}
+  
+  
+  .contact-button:hover{
+    cursor: pointer;
+    color: #000;
+    transform: scale(1.005); 
 }
 
 
-
+/*i need to write media query for desktop view*/
 
 
 @media only screen and (min-width: 800px) {
