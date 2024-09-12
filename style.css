@@ -5,6 +5,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Default styles */
 /* We declare some default styles
  in order not to repeat them for each 
@@ -106,6 +110,7 @@ h3 {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 60px;
+  margin-top: 30px;
   font-family: "Playfair Display SC", serif;
   font-weight: 400;
   font-style: normal;
@@ -139,7 +144,7 @@ h3 {
 .farm .container .box {
   width: 100%;
   background-color: gray;
-  height: 300px;
+  height: 400px;
 }
 
 /* alpacas */
@@ -257,7 +262,7 @@ h3 {
 }
 
 .accomodation .container .card .image {
-  height: 200px;
+  height: 400px;
   width: 100%;
   background-color: gray;
 }
@@ -382,5 +387,16 @@ textarea {
   .accomodation .container .card .image {
     height: 500px;
     width: 100%;
+  }
+
+  .accomodation .container .card .image img {
+    height: 500px;
+  }
+
+  .farm .container .box {
+    height: 500px;
+  }
+  .farm .container .box img {
+    height: 500px;
   }
 }
