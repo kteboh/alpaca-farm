@@ -369,8 +369,9 @@ textarea {
   background-color: #292729;
   color: white;
   padding: 15px;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column;*/
+  display: grid;
 }
 
 .footer .box {
@@ -459,6 +460,11 @@ h4 {
   color: white;
 }
 
+.news-letter .input-container input {
+  background-color: #000;
+  color: white;
+}
+
 .news-letter .input-container button {
   background-color: #e5ae8c;
   cursor: pointer;
@@ -484,10 +490,12 @@ h4 {
   .accomodation .container .card .image {
     height: 500px;
     width: 100%;
+    object-fit: cover;
   }
 
   .accomodation .container .card .image img {
     height: 500px;
+    object-fit: cover;
   }
 
   .farm .container .box {
@@ -495,5 +503,24 @@ h4 {
   }
   .farm .container .box img {
     height: 500px;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 400px) {
+  .footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 800px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .footer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
